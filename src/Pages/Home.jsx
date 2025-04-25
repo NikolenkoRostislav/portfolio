@@ -1,9 +1,11 @@
+import Header from "../Sections/Header";
+
 export default function Home() {
     return (
         <>
-            <header> Placeholder header </header>
+            <Header />
             <main>
-                This is the homepage
+                This is the main part of the homepage 
             </main>
         </>
     );

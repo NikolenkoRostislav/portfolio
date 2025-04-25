@@ -9,7 +9,7 @@ export const Context = createContext(null);
 
 export default function App() {
     const [darkTheme, setDarkTheme] = useState(true);
-    const [language, setLanguage] = useState("Deutsch");
+    const [language, setLanguage] = useState("English");
     function changeTheme() {setDarkTheme(!darkTheme)}
     function changeLang() {setLanguage(language === "English" ? "Deutsch" : "English")}
 
@@ -18,15 +18,13 @@ export default function App() {
     }, [language, darkTheme]);
 
     return (
-        <>
-            <Context.Provider value={{darkTheme, language, changeTheme, changeLang}} >
-                <Routes>
-                    <Route path="/" element={<Layout />}>
-                        <Route index element={<Home />} />
-                        <Route path="about" element={<About />} />
-                    </Route>
-                </Routes>
-            </Context.Provider>
-        </>
+        <Context.Provider value={{darkTheme, language, changeTheme, changeLang}} >
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="about" element={<About />} />
+                </Route>
+            </Routes>
+        </Context.Provider>
     )
 }
