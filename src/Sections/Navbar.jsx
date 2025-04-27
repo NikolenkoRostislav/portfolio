@@ -6,7 +6,7 @@ import { Context } from '../App.jsx';
 export default function Navbar() {
     const context = useContext(Context);
 
-    const links = [ //I should redo the languages implementation with 118n, this is for testing and not final
+    const links = [ //I should redo the languages implementation with i18next, this is for testing and not final
         { nameDE: "Startseite", nameEN: "Home", link: "/"},
         { nameDE: "Über mich", nameEN: "About", link: "/about"},
         { nameDE: "Kontakt", nameEN: "Contact Me", link: "/contacts"},
