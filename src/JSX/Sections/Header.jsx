@@ -1,6 +1,6 @@
-import email from '../assets/email.png';
-import phone from '../assets/phone.png';
-import github from '../assets/github.png';
+import email from '../../assets/email.png';
+import phone from '../../assets/phone.png';
+import github from '../../assets/github.png';
 
 export default function Header(){
     const icons = [

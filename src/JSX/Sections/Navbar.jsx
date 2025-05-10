@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Link } from "react-router";
 import { Context } from '../App.jsx';
-import '../CSS/Navbar.css';
+import '../../CSS/Navbar.css';
 
 export default function Navbar() {
     const context = useContext(Context);
