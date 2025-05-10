@@ -1,5 +1,66 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+}
+
 .contact-icons img {
     width: 30px;
     height: 30px;
     margin-right: 15px;
+}
+
+nav {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-right {
+    display: flex;
+    gap: 0.5rem;
+}
+  
+nav h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+  
+nav ul li a:hover {
+    color: #0077cc;
+}
+  
+nav button {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+  
+nav button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
