@@ -11,14 +11,12 @@ export default function Header(){
 
     return(
         <header>
-                <div className='basic-info'> 
-                    <h1>Rostislav Nikolenko</h1>
-                    <h2>Frankfurt, Germany</h2> 
-                </div>
+                <h1>Rostislav Nikolenko</h1>
+                <h2>Frankfurt, Germany</h2> 
                 <div className='contact-icons'> 
                     {icons.map((icon, index) => (
                         <a key={index} href={icon.link} target="_blank" rel="noopener noreferrer">
-                            <img src={icon.img} alt={icon.alt} />
+                            <img className='pure-black-image' src={icon.img} alt={icon.alt} />
                         </a>
                     ))}
                 </div>

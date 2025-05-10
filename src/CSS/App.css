@@ -1,0 +1,23 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --invert-icons: 0;
+}
+  
+.dark-theme {
+    --bg-color: black;
+    --text-color: white;
+    --invert-icons: 1;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: color 0.3s ease;
+    transition: background-color 0.2s ease;
+}
+
+.pure-black-image {
+    filter: invert(var(--invert-icons));
+}

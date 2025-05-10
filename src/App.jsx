@@ -1,6 +1,6 @@
 import { useState, useEffect, createContext } from 'react'
 import { Routes, Route } from 'react-router';
-import './App.css';
+import './CSS/App.css';
 import Layout from './Layout.jsx';
 import Home from './Pages/Home.jsx';
 import About from './Pages/About.jsx';
@@ -14,8 +14,9 @@ export default function App() {
     function changeLang() {setLanguage(language === "English" ? "Deutsch" : "English")}
 
     useEffect(() => {
-    //Save this in cookies or something, haven't quite figured it out yet 
-    }, [language, darkTheme]);
+        document.body.className = darkTheme ? 'dark-theme' : 'light-theme';
+        //Save this in cookies or something, haven't quite figured it out yet 
+    }, [darkTheme]);
 
     return (
         <Context.Provider value={{darkTheme, language, changeTheme, changeLang}} >
