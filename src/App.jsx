@@ -1,6 +1,6 @@
 import { useState, useEffect, createContext } from 'react'
 import { Routes, Route } from 'react-router';
-
+import './App.css';
 import Layout from './Layout.jsx';
 import Home from './Pages/Home.jsx';
 import About from './Pages/About.jsx';

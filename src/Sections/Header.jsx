@@ -1,8 +1,12 @@
+import email from '../assets/email.png';
+import phone from '../assets/phone.png';
+import github from '../assets/github.png';
+
 export default function Header(){
     const icons = [
-        {link: "link.com", icon: "icon.png"},
-        {link: "link.com", icon: "icon.png"},
-        {link: "link.com", icon: "icon.png"},
+        {link: "mailto:rostislavnikolenkowork@gmail.com", img: email, alt: "email icon"},
+        {link: "tel:+49123456789", img: phone, alt: "phone icon"},
+        {link: "https://github.com/NikolenkoRostislav", img: github, alt: "github icon"},
     ];
 
     return(
@@ -13,7 +17,9 @@ export default function Header(){
                 </div>
                 <div className='contact-icons'> 
                     {icons.map((icon, index) => (
-                        <a key={index} href={icon.link}><img src={icon.img} alt='contact icon'/></a>
+                        <a key={index} href={icon.link} target="_blank" rel="noopener noreferrer">
+                            <img src={icon.img} alt={icon.alt} />
+                        </a>
                     ))}
                 </div>
                 <p>I'm an 18 year old Front-End web developer. I have been programming for more than 4 years. 
