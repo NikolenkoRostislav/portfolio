@@ -1,9 +1,9 @@
 import { useState, useEffect, createContext } from 'react'
 import { Routes, Route } from 'react-router';
-import '../CSS/App.css';
-import Layout from './Layout.jsx';
-import Home from './Pages/Home.jsx';
-import About from './Pages/About.jsx';
+import './CSS/App.css';
+import Layout from './JSX/Layout.jsx';
+import Home from './JSX/Pages/Home.jsx';
+import About from './JSX/Pages/About.jsx';
 
 export const Context = createContext(null);
 
