@@ -22,8 +22,7 @@ export default function Header(){
                         </a>
                     ))}
                 </div>
-                <p>I'm an 18 year old Front-End web developer. I have been programming for more than 4 years. 
-                I have experience in working both independantly and collaboratively within a small team</p>
+                <p>{t('aboutMeHeader')}</p>
         </header>
     )
 }

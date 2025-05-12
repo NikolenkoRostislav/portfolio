@@ -1,11 +1,13 @@
 import { useContext } from 'react';
 import { Link } from "react-router";
 import { Context } from '../../App.jsx';
+import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import '../../CSS/Navbar.css';
 
 export default function Navbar() {
     const context = useContext(Context);
+    const { t } = useTranslation();
 
     const links = [
         {name: "Home", link: "/"},
@@ -27,7 +29,7 @@ export default function Navbar() {
             </div>
             <div className="nav-right">
                 <button onClick={context.changeTheme}>{context.darkTheme ? "Dark" : "Light"}</button> 
-                <button onClick={changeLang}>{i18next.language === "en" ? "Deutsch" : "English"}</button>  
+                <button onClick={changeLang}>{t('otherLanguage')}</button>  
             </div>
         </nav>
     )
