@@ -4,7 +4,7 @@ import github from '../../assets/github.png';
 import { useTranslation } from 'react-i18next';
 
 export default function Header(){
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     const icons = [
         {link: "mailto:rostislavnikolenkowork@gmail.com", img: email, alt: "email icon"},
         {link: "tel:+49123456789", img: phone, alt: "phone icon"},
